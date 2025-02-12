@@ -49,6 +49,7 @@ param(
     [Parameter(Mandatory=$false)][Switch]$SetSettings,    
 #    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()][String]$AdminPassword,
     [Parameter(Mandatory=$false)][String]$AdminPassword,
+    <#
     [ValidateScript({
         if($_ -notmatch "(\.csv)")
         {
@@ -57,6 +58,7 @@ param(
         return $true 
     })]
     [System.IO.FileInfo]$CsvPath,
+    #>
     [Parameter(Mandatory=$false)][ValidateScript({
         if($_ -notmatch "(\.log)")
         {
