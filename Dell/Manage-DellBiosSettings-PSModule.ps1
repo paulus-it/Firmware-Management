@@ -47,7 +47,8 @@
 param(
     [Parameter(Mandatory=$false)][Switch]$GetSettings,
     [Parameter(Mandatory=$false)][Switch]$SetSettings,    
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()][String]$AdminPassword,
+#    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()][String]$AdminPassword,
+    [Parameter(Mandatory=$false)][String]$AdminPassword,
     [ValidateScript({
         if($_ -notmatch "(\.csv)")
         {
